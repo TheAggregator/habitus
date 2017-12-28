@@ -1,14 +1,5 @@
 # Habitus
 Habitus adds workflows to Docker build. This means you can create a chain of builds to generate your final Docker image based on a workflow. This is particularly useful if your code is in compiled languages like Java or Go or if you need to use secrets like SSH keys during the build.
-
-![Codeship Status for cloud66/habitus](https://codeship.com/projects/714284d0-e914-0133-1e5d-4eaa3299b296/status)
-
-- Website: http://www.habitus.io/
-- [Download Habitus](https://github.com/cloud66/habitus/releases?utm_source=Githubdownload&utm_medium=GHDpage&utm_campaign=habitus)
-- Slack Channel: [#habitus](https://cloud66ers.slack.com/messages/habitus/), you need a Cloud 66 account, and use this [link](https://app.cloud66.com/accounts/join_slack_channel) to get an invite.
-- Articles: http://blog.cloud66.com/tag/habitus/
-
-![Logo habitus](https://lh5.googleusercontent.com/_PbaTkJhpA9zVRW_pj3Mt1ntpAZ6IUjTn0yDkVCsUZnJnE3jAxr5ciGF5SqdtR45--EHlIdYyr3dj7DcjRVfLBSS6BQPaGrwzzvMqqEcDJc47sDY4d2s9QQlJi3ZXUYPkODWOF2a)
 A build flow tool for Docker 
 
 Habitus is a standalone build flow tool for Docker. It’s a command line tool that builds Docker images based on their Dockerfile and a build.yml. 
@@ -59,9 +50,9 @@ ________________________________________________________________________________
 
 Just run the install script on macOS or Linux!
 
-`curl -sSL https://raw.githubusercontent.com/cloud66/habitus/master/habitus_install.sh | bash`
+`curl -sSL https://raw.githubusercontent.com/theaggregator/habitus/master/habitus_install.sh | bash`
 
-Or [download](https://github.com/cloud66/habitus/releases?utm_source=Githubdownload&utm_medium=GHDpage&utm_campaign=habitus) Habitus straight from this repo. Habitus can run on Linux, Windows and macOS. Copy the Habitus application into `/usr/local/bin/habitus` and check if it has the executable flags, if not run `chmod a+x /usr/local/bin/habitus`
+Or [download](https://github.com/theaggregator/habitus/releases?utm_source=Githubdownload&utm_medium=GHDpage&utm_campaign=habitus) Habitus straight from this repo. Habitus can run on Linux, Windows and macOS. Copy the Habitus application into `/usr/local/bin/habitus` and check if it has the executable flags, if not run `chmod a+x /usr/local/bin/habitus`
 
 Build files can be made up of multiple steps. Each step is independent of the other ones and downstream steps can use upstream ones as source (in `FROM` command). When habitus is installed, create a simple **build.yml** with just one build step and run Habitus. 
 
@@ -101,4 +92,4 @@ And you are ready to start your contribution to Habitus.
 
 ### CHANGELOG
 
-Check the changelog [here](https://github.com/cloud66/habitus/blob/master/CHANGELOG.md)
+Check the changelog [here](https://github.com/theaggregator/habitus/blob/master/CHANGELOG.md)
